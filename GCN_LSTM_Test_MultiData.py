@@ -52,31 +52,6 @@ tf.random.set_seed(42)
 np.random.seed(42)
 
 
-"""## Data
-
-We apply the GCN-LSTM model to the **Los-loop** data. This traffic dataset
-contains traffic information collected from loop detectors in the highway of Los Angeles County (Jagadish
-et al., 2014).  There are several processed versions of this dataset used by the research community working in Traffic forecasting space.
-
-This demo is based on the preprocessed version of the dataset used by the TGCN paper. It can be directly accessed from there [github repo](https://github.com/lehaifeng/T-GCN/tree/master/data).
-
-This dataset  contains traffic speeds from Mar.1 to Mar.7, 2012 of 207 sensors, recorded every 5 minutes.
-
-In order to use the model, we need:
-
-* A N by N adjacency matrix, which describes the distance relationship between the N sensors,
-* A N by T feature matrix, which describes the (f_1, .., f_T) speed records over T timesteps for the N sensors.
-
-A couple of other references for the same data albeit different time length are as follows:
-
-* [DIFFUSION CONVOLUTIONAL RECURRENT NEURAL NETWORK: DATA-DRIVEN TRAFFIC FORECASTING](https://github.com/liyaguang/DCRNN/tree/master/data): This dataset consists of 207 sensors and collect 4 months of data ranging from Mar 1st 2012 to Jun 30th 2012 for the experiment. It has some missing values.
-* [ST-MetaNet: Urban Traffic Prediction from Spatio-Temporal Data Using Deep Meta Learning](https://github.com/panzheyi/ST-MetaNet/tree/master/traffic-prediction). This work uses the DCRNN preprocessed data.
-
-## Loading and preprocessing the data
-"""
-
-
-"""This demo is based on the preprocessed version of the dataset used by the TGCN paper."""
 
 # Number of data points
 num_points = 690
